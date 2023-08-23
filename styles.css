@@ -1,5 +1,9 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
 
+:root {
+	--label-height: 3rem;
+}
+
 html,
 body {
 	height: 100%;
