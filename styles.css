@@ -82,3 +82,19 @@ input {
 	top: 0;
 	width: 0;
 }
+
+.exit-button {
+	display: none;
+}
+
+label:has(input:checked) .exit-button {
+	background-color: red;
+	border: none;
+	color: white;
+	cursor: pointer;
+	display: block;
+	font-size: 1rem;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
