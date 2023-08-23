@@ -23,3 +23,32 @@ body {
 	position: relative;
 	width: 100%;
 }
+
+label:has(input[name="section-input"]) {
+	cursor: pointer;
+	display: flex;
+	font-size: 1rem;
+	height: var(--label-height);
+	min-height: var(--label-height);
+	justify-content: center;
+	padding-top: calc(var(--label-height) / 2 - 0.5rem);
+	/* * Purpose of padding-top is to make text vertically aligned with the center when label is collapsed and vertically aligned with the top when label is expanded  */
+	position: relative;
+	width: 100%;
+}
+
+label[for="about"] {
+	background-color: #a3d8ff;
+}
+
+label[for="projects"] {
+	background-color: #6ba4e7;
+}
+
+label[for="skills"] {
+	background-color: #3d85c6;
+}
+
+label[for="contact"] {
+	background-color: #235e96;
+}
