@@ -10,3 +10,11 @@ body {
 	display: flex;
 	justify-content: center;
 }
+
+.app {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
