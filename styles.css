@@ -21,7 +21,24 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	transition: transform 0.6s linear;
 	width: 100%;
+}
+
+.app:has(#about:checked) {
+	transform: translatey(calc(-50vh + 50%));
+}
+
+.app:has(#projects:checked) {
+	transform: translatey(calc(-50vh + 50% - var(--label-height)));
+}
+
+.app:has(#skills:checked) {
+	transform: translatey(calc(-50vh + 50% - var(--label-height) * 2));
+}
+
+.app:has(#contact:checked) {
+	transform: translatey(calc(-50vh + 50% - var(--label-height) * 3));
 }
 
 label:has(input[name="section-input"]) {
