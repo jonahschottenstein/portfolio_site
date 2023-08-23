@@ -52,11 +52,14 @@ label:has(input[name="section-input"]) {
 	padding-top: calc(var(--label-height) / 2 - 0.5rem);
 	/* * Purpose of padding-top is to make text vertically aligned with the center when label is collapsed and vertically aligned with the top when label is expanded  */
 	position: relative;
-	transition: min-height 0.6s linear;
+	transition: font-size 0.6s linear, font-weight 0.6s linear,
+		min-height 0.6s linear;
 	width: 100%;
 }
 
 label:has(input:checked) {
+	font-size: 2rem;
+	font-weight: bold;
 	min-height: 100vh;
 }
 
