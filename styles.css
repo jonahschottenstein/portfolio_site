@@ -1,7 +1,9 @@
 @import "node_modules/modern-normalize/modern-normalize.css";
 
+/** transition source: https://stackoverflow.com/questions/47798256/animate-div-to-full-screen-size-from-current-position-on-click-click-again-to-a */
+
 :root {
-	--label-height: 3rem;
+	--section-height: 4rem;
 }
 
 html,
@@ -17,44 +19,55 @@ body {
 }
 
 .app {
-	align-items: center;
+	position: relative;
+	/* display: block; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	position: relative;
-	transition: transform 0.6s linear;
 	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	/** not sure transition is necessary */
 }
 
-.app:has(#about:checked) {
-	transform: translatey(calc(-50vh + 50%));
-}
-
-.app:has(#projects:checked) {
-	transform: translatey(calc(-50vh + 50% - var(--label-height)));
-}
-
-.app:has(#skills:checked) {
-	transform: translatey(calc(-50vh + 50% - var(--label-height) * 2));
-}
-
-.app:has(#contact:checked) {
-	transform: translatey(calc(-50vh + 50% - var(--label-height) * 3));
-}
-
-label:has(input[name="section-input"]) {
+section {
+	box-sizing: border-box;
 	cursor: pointer;
+	/* display: flex;
+	justify-content: center; */
+	/* display: block; */
 	display: flex;
-	font-size: 1rem;
-	height: var(--label-height);
-	min-height: var(--label-height);
-	justify-content: center;
-	padding-top: calc(var(--label-height) / 2 - 0.5rem);
-	/* * Purpose of padding-top is to make text vertically aligned with the center when label is collapsed and vertically aligned with the top when label is expanded  */
+	flex-direction: column;
 	position: relative;
-	transition: font-size 0.6s linear, font-weight 0.6s linear,
-		min-height 0.6s linear;
+	height: var(--section-height);
+	transition: all 0.75s ease;
+	overflow: hidden;
+	text-align: center;
 	width: 100%;
+	z-index: 5;
+	/** not sure z-index is necessary */
+}
+
+#about-section {
+	background-color: #a3d8ff;
+}
+#projects-section {
+	background-color: #6ba4e7;
+}
+#skills-section {
+	background-color: #3d85c6;
+}
+#contact-section {
+	background-color: #235e96;
+}
+
+.child-expanded section {
+	height: 0;
+}
+
+section.section-expanded {
+	height: 100%;
 }
 
 label:has(input:checked) {
