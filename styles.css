@@ -103,13 +103,10 @@ section.section-expanded .section-content {
 
 .project {
 	border: solid black 1px;
+	text-align: left;
 }
 
 .project-titles-list {
 	list-style: none;
 	text-align: end;
-}
-
-.project h2 {
-	text-align: start;
 }
