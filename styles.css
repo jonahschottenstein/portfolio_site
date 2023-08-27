@@ -101,26 +101,15 @@ section.section-expanded .section-content {
 	opacity: 1;
 }
 
-input {
-	height: 0;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 0;
+.project {
+	border: solid black 1px;
 }
 
-.exit-button {
-	display: none;
+.project-titles-list {
+	list-style: none;
+	text-align: end;
 }
 
-label:has(input:checked) .exit-button {
-	background-color: red;
-	border: none;
-	color: white;
-	cursor: pointer;
-	display: block;
-	font-size: 1rem;
-	position: absolute;
-	right: 10px;
-	top: 10px;
+.project h2 {
+	text-align: start;
 }
