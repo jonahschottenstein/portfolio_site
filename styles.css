@@ -76,12 +76,16 @@ label:has(input:checked) {
 	min-height: 100vh;
 }
 
-label[for="about"] {
-	background-color: #a3d8ff;
+.exit-button {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	visibility: hidden;
 }
 
-label[for="projects"] {
-	background-color: #6ba4e7;
+section.section-expanded .exit-button {
+	appearance: none;
+	visibility: visible;
 }
 
 label[for="skills"] {
