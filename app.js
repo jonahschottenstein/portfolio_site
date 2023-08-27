@@ -9,11 +9,9 @@ const handleSectionClick = (e) => {
 const handleExitClick = (e) => {
 	if (!e.target.matches(".exit-button")) return;
 
-	const sectionInput = e.target.parentElement.querySelector(
-		"input[name='section-input']"
-	);
-
-	sectionInput.checked = false;
+	const section = e.target.parentElement;
+	section.classList.remove("section-expanded");
+	section.parentElement.classList.remove("child-expanded");
 };
 
 document.addEventListener("click", handleSectionClick);
