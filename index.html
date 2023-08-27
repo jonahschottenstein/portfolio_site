@@ -8,22 +8,54 @@
 	</head>
 	<body>
 		<div class="app">
-			<label for="about">
-				<input type="radio" id="about" name="section-input" />About
+			<section id="about-section">
+				<h1>About</h1>
 				<button class="exit-button">Exit</button>
-			</label>
-			<label for="projects">
-				<input type="radio" id="projects" name="section-input" />Projects
+				<div id="about-content" class="section-content">
+					ABOUT - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Expedita labore dolor cupiditate explicabo nihil veniam harum quia ut
+					dolorem consequatur?
+				</div>
+			</section>
+			<section id="projects-section">
+				<h1>Projects</h1>
 				<button class="exit-button">Exit</button>
-			</label>
-			<label for="skills">
-				<input type="radio" id="skills" name="section-input" />Skills
+				<div id="projects-content" class="section-content">
+					<ul class="project-titles-list">
+						<li class="project-title">Crossword Creator</li>
+						<li class="project-title">CBT Toolbox</li>
+						<li class="project-title">Content Blocker</li>
+						<li class="project-title">Web Notes</li>
+					</ul>
+					<div id="crossword-creator" class="project">
+						<h2>Crossword Creator</h2>
+						<p class="project-description">
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+							dignissimos consequuntur possimus rerum culpa praesentium corporis
+							sint suscipit error distinctio provident ipsa natus accusamus
+							debitis deserunt fugiat est itaque labore vel similique, quos, et
+							pariatur obcaecati placeat! Enim temporibus dolorum velit nemo
+							deleniti incidunt iste! Recusandae officiis suscipit blanditiis
+							adipisci!
+						</p>
+						<a
+							class="project-link"
+							href="https://github.com/jonahschottenstein/crossword#readme"
+							>View Github</a
+						>
+					</div>
+				</div>
+			</section>
+			<section id="skills-section">
+				<h1>Skills</h1>
 				<button class="exit-button">Exit</button>
-			</label>
-			<label for="contact">
-				<input type="radio" id="contact" name="section-input" />Contact
+				<div id="skills-content" class="section-content"></div>
+			</section>
+			<section id="contact-section">
+				<h1>Contact</h1>
 				<button class="exit-button">Exit</button>
-			</label>
+				<div id="contact-content" class="section-content"></div>
+			</section>
 		</div>
 
 		<script src="app.js"></script>
