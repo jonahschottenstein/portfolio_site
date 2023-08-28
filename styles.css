@@ -88,11 +88,15 @@ section.section-expanded .exit-button {
 }
 
 .section-content {
+	align-items: flex-start;
 	/* border: solid red 1px; */
 	/* display: none; */
+	display: flex;
 	flex: 1;
+	flex-direction: column;
+	/* margin: 1rem; */
 	opacity: 0;
-	padding: 1rem;
+	/* padding: 1rem; */
 	transition: opacity 0.75s ease;
 }
 
@@ -101,12 +105,36 @@ section.section-expanded .section-content {
 	opacity: 1;
 }
 
+#projects-content {
+	overflow: scroll;
+}
+
+.projects-wrapper {
+	overflow-y: scroll;
+}
+
 .project {
-	border: solid black 1px;
+	margin: 1rem;
+	margin-bottom: 5rem;
 	text-align: left;
 }
 
+.project:last-child {
+	margin-bottom: 11rem;
+}
+
 .project-titles-list {
+	align-self: flex-end;
 	list-style: none;
+	margin-right: 1rem;
 	text-align: end;
+}
+
+.project-title {
+	margin: 0.5rem 0;
+}
+
+.project-description,
+.project-link {
+	padding-left: 1.5rem;
 }
