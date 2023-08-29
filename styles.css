@@ -138,3 +138,56 @@ section.section-expanded .section-content {
 .project-link {
 	padding-left: 1.5rem;
 }
+
+/* Contact Form */
+#contact-content {
+	padding: 1rem;
+}
+
+form#fs-frm {
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+}
+
+fieldset#fs-frm-inputs {
+	align-items: stretch;
+	border: 0;
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	width: 100%;
+}
+
+fieldset#fs-frm-inputs label {
+	font-weight: bold;
+	/* TODO: decide if you want font-weight: bold  */
+	margin-bottom: 0.25rem;
+}
+
+fieldset#fs-frm-inputs input,
+textarea {
+	background: transparent;
+	border: 0;
+	border-bottom: solid black 1px;
+	border-radius: 0;
+	margin-bottom: 1.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+input[type="submit"] {
+	align-self: stretch;
+	appearance: none;
+	margin: 1rem;
+	padding: 0.75rem;
+}
+
+fieldset#fs-frm-inputs input::placeholder,
+textarea::placeholder {
+	color: black;
+}
