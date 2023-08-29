@@ -97,7 +97,7 @@ section.section-expanded .exit-button {
 	/* margin: 1rem; */
 	opacity: 0;
 	/* padding: 1rem; */
-	transition: opacity 0.75s ease;
+	transition: opacity 0.5s ease 0.5s;
 }
 
 section.section-expanded .section-content {
