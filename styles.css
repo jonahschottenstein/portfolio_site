@@ -105,6 +105,11 @@ section.section-expanded .section-content {
 	opacity: 1;
 }
 
+#about-content > p {
+	margin: 1rem 2rem 0 2rem;
+	text-align: left;
+}
+
 #projects-content {
 	overflow: scroll;
 }
