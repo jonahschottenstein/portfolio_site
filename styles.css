@@ -144,6 +144,20 @@ section.section-expanded .section-content {
 	padding-left: 1.5rem;
 }
 
+/* Skills Section */
+#skills-content {
+	align-items: center;
+	justify-content: center;
+}
+.skills-grid {
+	align-items: center;
+	display: grid;
+	flex: 1;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	width: 100%;
+}
+
 /* Contact Form */
 #contact-content {
 	padding: 1rem;
