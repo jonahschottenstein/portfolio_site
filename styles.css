@@ -33,6 +33,7 @@ body {
 
 section {
 	box-sizing: border-box;
+	color: white;
 	cursor: pointer;
 	/* display: flex;
 	justify-content: center; */
@@ -50,16 +51,20 @@ section {
 }
 
 #about-section {
-	background-color: #a3d8ff;
+	/* background-color: #a3d8ff; */
+	background-color: #999999;
 }
 #projects-section {
-	background-color: #6ba4e7;
+	/* background-color: #6ba4e7; */
+	background-color: #666666;
 }
 #skills-section {
-	background-color: #3d85c6;
+	/* background-color: #3d85c6; */
+	background-color: #333333;
 }
 #contact-section {
-	background-color: #235e96;
+	/* background-color: #235e96; */
+	background-color: #000000;
 }
 
 .child-expanded section {
@@ -193,8 +198,9 @@ fieldset#fs-frm-inputs input,
 textarea {
 	background: transparent;
 	border: 0;
-	border-bottom: solid black 1px;
+	border-bottom: solid white 1px;
 	border-radius: 0;
+	color: white;
 	margin-bottom: 1.5rem;
 	padding: 0.5rem 0.5rem 0.5rem 0;
 }
@@ -208,5 +214,5 @@ input[type="submit"] {
 
 fieldset#fs-frm-inputs input::placeholder,
 textarea::placeholder {
-	color: black;
+	color: white;
 }
