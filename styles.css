@@ -79,14 +79,31 @@ h1 {
 }
 
 .exit-button {
+	align-items: center;
+	background: 0;
+	border: 0;
+	border-radius: 50%;
+	display: flex;
+	height: 1.75rem;
+	justify-content: center;
+	opacity: 0;
+	padding: 0;
 	position: absolute;
 	right: 1rem;
-	top: 1rem;
+	top: 19.92px;
+	transition: opacity 0.5s ease 0.5s;
 	visibility: hidden;
+	-webkit-tap-highlight-color: transparent;
+	width: 1.75rem;
+}
+
+.exit-button * {
+	pointer-events: none;
 }
 
 section.section-expanded .exit-button {
 	appearance: none;
+	opacity: 1;
 	visibility: visible;
 }
 
