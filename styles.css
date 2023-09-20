@@ -159,6 +159,16 @@ section.section-expanded .section-content {
 	margin: 0.5rem 0;
 }
 
+.project-video-container {
+	background-color: #000000;
+	margin-left: 1.5rem;
+}
+
+.project-video {
+	display: block;
+	width: 100%;
+}
+
 .project-description,
 .project-link {
 	padding-left: 1.5rem;
