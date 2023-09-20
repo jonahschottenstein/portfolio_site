@@ -130,7 +130,7 @@ section.section-expanded .section-content {
 }
 
 #about-content > p {
-	margin: 1rem 2rem 0 2rem;
+	margin: 0 2rem 1rem 2rem;
 	text-align: left;
 }
 
@@ -148,9 +148,9 @@ section.section-expanded .section-content {
 	text-align: left;
 }
 
-.project:last-child {
+/* .project:last-child {
 	margin-bottom: 11rem;
-}
+} */
 
 .project-titles-list {
 	align-self: flex-end;
