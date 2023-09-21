@@ -144,7 +144,11 @@ section.section-expanded .section-content {
 }
 
 .projects-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 	overflow-y: scroll;
+	width: 100%;
 }
 
 .project {
