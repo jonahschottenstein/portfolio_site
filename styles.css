@@ -266,3 +266,9 @@ fieldset#fs-frm-inputs input::placeholder,
 textarea::placeholder {
 	color: white;
 }
+
+@media (min-width: 740px) {
+	#about-content > p {
+		font-size: 1.25rem;
+	}
+}
