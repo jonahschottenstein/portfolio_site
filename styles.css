@@ -135,6 +135,7 @@ section.section-expanded .section-content {
 
 #about-content > p {
 	margin: 0 2rem 1rem 2rem;
+	max-width: 37.5rem;
 	text-align: left;
 }
 
