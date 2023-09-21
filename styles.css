@@ -154,6 +154,7 @@ section.section-expanded .section-content {
 .project {
 	margin: 1rem;
 	margin-bottom: 5rem;
+	max-width: 37.5rem;
 	text-align: left;
 }
 
@@ -216,6 +217,7 @@ form#fs-frm {
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
+	max-width: 37.5rem;
 	width: 100%;
 }
 
