@@ -196,6 +196,7 @@ section.section-expanded .section-content {
 #skills-content {
 	align-items: center;
 	justify-content: center;
+	overflow-y: scroll;
 }
 .skills-grid {
 	align-items: center;
@@ -213,6 +214,7 @@ section.section-expanded .section-content {
 /* Contact Form */
 #contact-content {
 	padding: 1rem;
+	overflow-y: scroll;
 }
 
 form#fs-frm {
