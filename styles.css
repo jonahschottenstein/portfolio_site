@@ -48,6 +48,10 @@ section {
 	/** not sure z-index is necessary */
 }
 
+p {
+	line-height: 1.5;
+}
+
 #about-section {
 	/* background-color: #a3d8ff; */
 	background-color: #999999;
