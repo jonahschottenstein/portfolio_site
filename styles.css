@@ -201,7 +201,11 @@ section.section-expanded .section-content {
 	align-items: center;
 	display: grid;
 	flex: 1;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(
+		auto-fit,
+		minmax(0, min(100%/3, max(22rem/3, 100%/4)))
+	);
+	justify-content: space-evenly;
 	justify-items: center;
 	width: 100%;
 }
