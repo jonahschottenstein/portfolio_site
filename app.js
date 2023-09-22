@@ -10,7 +10,7 @@ function handleScrollTop(e) {
 	scrollElement.scrollTop = 0;
 }
 
-const handleSectionEvent = (section, eventAction) =>
+const handleSectionScrollTop = (section, eventAction) =>
 	section[eventAction]("transitionend", handleScrollTop);
 
 const handleSectionClick = (e) => {
