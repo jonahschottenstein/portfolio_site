@@ -1,3 +1,15 @@
+function handleScrollTop(e) {
+	if (this.classList.contains("section-expanded")) return;
+	if (e.propertyName !== "height") return;
+
+	const scrollElement =
+		this.id === "projects-section"
+			? this.querySelector(".projects-wrapper")
+			: this.querySelector(".section-content");
+
+	scrollElement.scrollTop = 0;
+}
+
 const handleSectionClick = (e) => {
 	if (!e.target.matches("section")) return;
 	if (e.target.classList.contains("section-expanded")) return;
