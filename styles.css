@@ -15,12 +15,10 @@ body {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	/* overflow: hidden; */
 }
 
 .app {
 	position: relative;
-	/* display: block; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -33,9 +31,6 @@ section {
 	box-sizing: border-box;
 	color: white;
 	cursor: pointer;
-	/* display: flex;
-	justify-content: center; */
-	/* display: block; */
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -53,19 +48,15 @@ p {
 }
 
 #about-section {
-	/* background-color: #a3d8ff; */
 	background-color: #999999;
 }
 #projects-section {
-	/* background-color: #6ba4e7; */
 	background-color: #666666;
 }
 #skills-section {
-	/* background-color: #3d85c6; */
 	background-color: #333333;
 }
 #contact-section {
-	/* background-color: #235e96; */
 	background-color: #000000;
 }
 
@@ -79,7 +70,6 @@ section.section-expanded {
 }
 
 h1 {
-	/* font-size: 1rem; */
 	pointer-events: none;
 }
 
@@ -115,19 +105,14 @@ section.section-expanded .exit-button {
 
 .section-content {
 	align-items: center;
-	/* border: solid red 1px; */
-	/* display: none; */
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	/* margin: 1rem; */
 	opacity: 0;
-	/* padding: 1rem; */
 	transition: opacity 0.5s ease 0.5s;
 }
 
 section.section-expanded .section-content {
-	/* display: block; */
 	opacity: 1;
 }
 
@@ -159,10 +144,6 @@ section.section-expanded .section-content {
 	max-width: 37.5rem;
 	text-align: left;
 }
-
-/* .project:last-child {
-	margin-bottom: 11rem;
-} */
 
 .project-titles-list {
 	align-self: flex-end;
