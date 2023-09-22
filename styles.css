@@ -2,6 +2,13 @@
 
 /** transition source: https://stackoverflow.com/questions/47798256/animate-div-to-full-screen-size-from-current-position-on-click-click-again-to-a */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root {
 	--section-height: 4rem;
 	--max-width: 37.5rem;
@@ -13,15 +20,28 @@ body {
 }
 
 body {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
 .app {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	width: 100%;
 	height: 100%;
@@ -29,13 +49,21 @@ body {
 }
 
 section {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	color: white;
 	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	position: relative;
 	height: var(--section-height);
+	-webkit-transition: height 0.75s ease;
+	-o-transition: height 0.75s ease;
 	transition: height 0.75s ease;
 	overflow: hidden;
 	text-align: center;
@@ -75,13 +103,19 @@ h1 {
 }
 
 .exit-button {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	background: 0;
 	border: 0;
 	border-radius: 50%;
 	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 1.75rem;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	opacity: 0;
 	padding: 0;
@@ -89,6 +123,8 @@ h1 {
 	right: 1rem;
 	top: 19.92px;
 	/** top value is equal to h1 margin-top value */
+	-webkit-transition: opacity 0.5s ease 0.5s;
+	-o-transition: opacity 0.5s ease 0.5s;
 	transition: opacity 0.5s ease 0.5s;
 	visibility: hidden;
 	-webkit-tap-highlight-color: transparent;
@@ -100,17 +136,30 @@ h1 {
 }
 
 section.section-expanded .exit-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	appearance: none;
 	opacity: 1;
 	visibility: visible;
 }
 
 .section-content {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	opacity: 0;
+	-webkit-transition: opacity 0.5s ease 0.5s;
+	-o-transition: opacity 0.5s ease 0.5s;
 	transition: opacity 0.5s ease 0.5s;
 }
 
@@ -133,8 +182,15 @@ section.section-expanded .section-content {
 }
 
 .projects-wrapper {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	overflow-y: scroll;
 	width: 100%;
@@ -148,6 +204,7 @@ section.section-expanded .section-content {
 }
 
 .project-titles-list {
+	-ms-flex-item-align: end;
 	align-self: flex-end;
 	list-style: none;
 	margin-right: 1rem;
@@ -179,18 +236,29 @@ section.section-expanded .section-content {
 
 /* Skills Section */
 #skills-content {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	overflow-y: scroll;
 }
 .skills-grid {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	display: -ms-grid;
 	display: grid;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
 	grid-template-columns: repeat(
 		auto-fit,
 		minmax(0, min(100%/3, max(22rem/3, 100%/4)))
 	);
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
 	justify-content: space-evenly;
 	justify-items: center;
 	width: 100%;
@@ -203,21 +271,43 @@ section.section-expanded .section-content {
 }
 
 form#fs-frm {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	max-width: var(--max-width);
 	width: 100%;
 }
 
 fieldset#fs-frm-inputs {
+	-webkit-box-align: stretch;
+	-ms-flex-align: stretch;
 	align-items: stretch;
 	border: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 	text-align: left;
 	width: 100%;
@@ -240,11 +330,35 @@ textarea {
 }
 
 input[type="submit"] {
+	-ms-flex-item-align: stretch;
+	-ms-grid-row-align: stretch;
 	align-self: stretch;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 	appearance: none;
 	cursor: pointer;
 	margin: 1rem;
 	padding: 0.75rem;
+}
+
+fieldset#fs-frm-inputs input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: white;
+}
+
+fieldset#fs-frm-inputs input::-moz-placeholder,
+textarea::-moz-placeholder {
+	color: white;
+}
+
+fieldset#fs-frm-inputs input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: white;
+}
+
+fieldset#fs-frm-inputs input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+	color: white;
 }
 
 fieldset#fs-frm-inputs input::placeholder,
