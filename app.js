@@ -10,6 +10,9 @@ function handleScrollTop(e) {
 	scrollElement.scrollTop = 0;
 }
 
+const handleSectionEvent = (section, eventAction) =>
+	section[eventAction]("transitionend", handleScrollTop);
+
 const handleSectionClick = (e) => {
 	if (!e.target.matches("section")) return;
 	if (e.target.classList.contains("section-expanded")) return;
