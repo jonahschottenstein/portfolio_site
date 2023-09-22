@@ -74,6 +74,7 @@ p {
 }
 
 section.section-expanded {
+	cursor: auto;
 	height: 100%;
 }
 
@@ -87,6 +88,7 @@ h1 {
 	background: 0;
 	border: 0;
 	border-radius: 50%;
+	cursor: pointer;
 	display: flex;
 	height: 1.75rem;
 	justify-content: center;
@@ -258,6 +260,7 @@ textarea {
 input[type="submit"] {
 	align-self: stretch;
 	appearance: none;
+	cursor: pointer;
 	margin: 1rem;
 	padding: 0.75rem;
 }
