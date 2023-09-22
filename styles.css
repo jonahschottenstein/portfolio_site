@@ -257,7 +257,7 @@ textarea::placeholder {
 	}
 }
 
-@media (max-height: 430px), screen and (orientation: landscape) {
+@media screen and (max-height: 430px) and (orientation: landscape) {
 	.project {
 		max-width: 33rem;
 	}
