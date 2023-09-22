@@ -19,6 +19,14 @@ const handleSectionClick = (e) => {
 
 	e.target.classList.add("section-expanded");
 	e.target.parentElement.classList.add("child-expanded");
+
+	const sections = document.querySelectorAll(
+		"#about-section, #projects-section, #skills-section, #contact-section"
+	);
+
+	sections.forEach((section) => {
+		handleSectionScrollTop(section, "removeEventListener");
+	});
 };
 
 const handleExitClick = (e) => {
@@ -27,6 +35,8 @@ const handleExitClick = (e) => {
 	const section = e.target.parentElement;
 	section.classList.remove("section-expanded");
 	section.parentElement.classList.remove("child-expanded");
+
+	handleSectionScrollTop(section, "addEventListener");
 };
 
 document.addEventListener("click", handleSectionClick);
