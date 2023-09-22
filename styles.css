@@ -4,6 +4,7 @@
 
 :root {
 	--section-height: 4rem;
+	--max-width: 37.5rem;
 }
 
 html,
@@ -123,7 +124,7 @@ section.section-expanded .section-content {
 
 #about-content > p {
 	margin: 0 2rem 1rem 2rem;
-	max-width: 37.5rem;
+	max-width: var(--max-width);
 	text-align: left;
 }
 
@@ -142,7 +143,7 @@ section.section-expanded .section-content {
 .project {
 	margin: 1rem;
 	margin-bottom: 5rem;
-	max-width: 37.5rem;
+	max-width: var(--max-width);
 	text-align: left;
 }
 
@@ -207,7 +208,7 @@ form#fs-frm {
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
-	max-width: 37.5rem;
+	max-width: var(--max-width);
 	width: 100%;
 }
 
