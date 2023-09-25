@@ -389,8 +389,9 @@ textarea {
 	border-bottom: solid white 1px;
 	border-radius: 0;
 	color: white;
+	margin-top: 0.25rem;
 	margin-bottom: 1.5rem;
-	padding: 0.5rem 0.5rem 0.5rem 0;
+	padding: 0.5rem;
 }
 
 input[type="submit"] {
