@@ -285,6 +285,15 @@ section.section-expanded .section-content {
 	margin-left: 1.5rem;
 }
 
+.project-key-features {
+	line-height: 1.5;
+	margin-left: 1.5rem;
+}
+
+.project-key-features > li {
+	margin-bottom: 0.25rem;
+}
+
 .project-link {
 	background-color: white;
 }
