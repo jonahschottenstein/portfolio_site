@@ -432,6 +432,18 @@ textarea::placeholder {
 	color: white;
 }
 
+@media (max-width: 391px) {
+	.external-links {
+		flex-direction: column;
+		padding-left: 0;
+	}
+
+	.external-links > li:nth-child(1) {
+		margin-bottom: 1rem;
+		margin-right: 0;
+	}
+}
+
 @media (min-width: 740px) {
 	#about-content > p {
 		font-size: 1.25rem;
