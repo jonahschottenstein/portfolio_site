@@ -133,8 +133,11 @@ h3 {
 	/** <h1> default styles  */
 
 	pointer-events: none;
+	transition: transform 1s ease;
+}
 
-	/** <h1> default styles  */
+section.section-expanded > h3 {
+	transform: scale(calc(2 / 1.5));
 }
 
 h4 {
