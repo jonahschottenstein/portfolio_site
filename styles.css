@@ -101,7 +101,11 @@ section.section-expanded {
 }
 
 header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	left: 0;
 	padding: 1rem;
@@ -127,25 +131,37 @@ h3 {
 	margin-bottom: var(--h3-vert-margin);
 
 	display: block;
+	-webkit-margin-start: 0px;
 	margin-inline-start: 0px;
+	-webkit-margin-end: 0px;
 	margin-inline-end: 0px;
 	font-weight: bold;
 	/** <h1> default styles  */
 
 	pointer-events: none;
+	-webkit-transition: -webkit-transform 1s ease;
+	transition: -webkit-transform 1s ease;
+	-o-transition: transform 1s ease;
 	transition: transform 1s ease;
+	transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 section.section-expanded > h3 {
+	-webkit-transform: scale(calc(2 / 1.5));
+	-ms-transform: scale(calc(2 / 1.5));
 	transform: scale(calc(2 / 1.5));
 }
 
 h4 {
 	display: block;
 	font-size: 1.5em;
+	-webkit-margin-before: 0.83em;
 	margin-block-start: 0.83em;
+	-webkit-margin-after: 0.83em;
 	margin-block-end: 0.83em;
+	-webkit-margin-start: 0px;
 	margin-inline-start: 0px;
+	-webkit-margin-end: 0px;
 	margin-inline-end: 0px;
 	font-weight: bold;
 
@@ -153,7 +169,11 @@ h4 {
 }
 
 .external-links {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 	list-style-type: none;
 	margin: 0;
@@ -438,6 +458,9 @@ textarea::placeholder {
 
 @media (max-width: 391px) {
 	.external-links {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 		padding-left: 0;
 	}
