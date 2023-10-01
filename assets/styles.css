@@ -1,4 +1,4 @@
-@import "node_modules/modern-normalize/modern-normalize.css";
+@import "../node_modules/modern-normalize/modern-normalize.css";
 
 /** transition source: https://stackoverflow.com/questions/47798256/animate-div-to-full-screen-size-from-current-position-on-click-click-again-to-a */
 
