@@ -71,7 +71,6 @@ section {
 	text-align: center;
 	width: 100%;
 	z-index: 5;
-	/** not sure z-index is necessary */
 }
 
 p {
@@ -164,7 +163,6 @@ h4 {
 	-webkit-margin-end: 0px;
 	margin-inline-end: 0px;
 	font-weight: bold;
-
 	/** <h2> default styles */
 }
 
