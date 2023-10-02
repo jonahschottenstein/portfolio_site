@@ -79,14 +79,17 @@ p {
 }
 
 #about-section {
-	background-color: #999999;
+	background-color: #595959;
 }
+
 #projects-section {
-	background-color: #666666;
+	background-color: #3c3c3c;
 }
+
 #skills-section {
-	background-color: #333333;
+	background-color: #1e1e1e;
 }
+
 #contact-section {
 	background-color: #000000;
 }
