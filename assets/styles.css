@@ -29,6 +29,7 @@ body {
 	display: flex;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
+	font-family: "Roboto", sans-serif;
 	justify-content: center;
 	min-width: 320px;
 }
@@ -111,6 +112,13 @@ header {
 	position: absolute;
 	right: 0;
 	top: 0;
+}
+
+h1,
+h3,
+h4,
+h5 {
+	font-family: "Oswald", sans-serif;
 }
 
 h1 {
