@@ -269,6 +269,10 @@ section.section-expanded .section-content {
 	text-align: left;
 }
 
+#about-content > p:nth-child(1) {
+	margin-top: 1rem;
+}
+
 #projects-content {
 	overflow: scroll;
 }
@@ -363,6 +367,13 @@ section.section-expanded .section-content {
 	justify-content: space-evenly;
 	justify-items: center;
 	width: 100%;
+}
+
+.skill-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 /* Contact Form */
@@ -492,5 +503,9 @@ textarea::placeholder {
 @media screen and (max-height: 430px) and (orientation: landscape) {
 	.project {
 		max-width: 33rem;
+	}
+
+	.skill-wrapper {
+		transform: scale(0.75);
 	}
 }
