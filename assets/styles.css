@@ -13,6 +13,8 @@
 	--section-height: 4rem;
 	--max-width: 37.5rem;
 	--h3-vert-margin: 18.203px;
+	--project-link-color: #b8cfff;
+	--project-link-visited-color: #ffb8ff;
 }
 
 html,
@@ -338,8 +340,12 @@ section.section-expanded .section-content {
 	margin-bottom: 0.25rem;
 }
 
-.project-link {
-	background-color: white;
+.project-link:link {
+	color: var(--project-link-color);
+}
+
+.project-link:visited {
+	color: var(--project-link-visited-color);
 }
 
 /* Skills Section */
