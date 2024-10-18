@@ -316,14 +316,72 @@ section.section-expanded .section-content {
 	margin: 0.5rem 0;
 }
 
-.project-video-container {
+/* .project-video-container {
 	background-color: #000000;
 	margin-left: 1.5rem;
+} */
+
+.project-media-container {
+	background-color: #000000;
+	margin-left: 1.5rem;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	position: relative;
 }
 
-.project-video {
+/* .project-media-container:has(.view-project:hover) a img.project-media {
+	transform: scale(1.05);
+} */
+
+/* .project-video {
 	display: block;
 	width: 100%;
+} */
+
+.project-media {
+	display: block;
+	width: 100%;
+}
+
+/* img.project-media {
+	transition: transform 0.3s ease;
+} */
+
+/* img.project-media:hover {
+	transform: scale(1.05);
+} */
+
+/* .view-project {
+	inset: 0;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease-in;
+} */
+
+/* .view-project:hover {
+	opacity: 1;
+} */
+
+/* .project-media-container a:has(img.project-media:hover) + .view-project {
+	opacity: 1;
+} */
+
+/* .project-media-container:has(a img.project-media:active) {
+	transform: translateY(2px);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+} */
+
+/* a:has(img.project-media:active) + div.view-project {
+	background-color: rgba(0, 0, 0, 0.5);
+} */
+
+h5.tech-stack {
+	margin-left: 1.5rem;
 }
 
 .project-description,
